@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://183.99.154.178:9999/") // FastAPI 서버의 기본 URL
+                .baseUrl("Your_Base_URL") // FastAPI 서버의 기본 URL
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(client)
                 .build();
