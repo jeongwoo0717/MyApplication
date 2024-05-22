@@ -26,4 +26,7 @@ public interface RetrofitInterface
 
     @POST("users2")
     Call<Void> createUser(@Body DataModel user);
+
+    @GET("/server/")
+    Call<ActivityResponse> getLatestPredictedActivity();
 }
